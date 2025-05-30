@@ -93,22 +93,22 @@
 </div>
 
 <div class="game-container">
-    <h3>Final earth</h3>
-    <iframe id="gameFrame15" src="https://sites.google.com/view/theorangetree981626/final-earth" width="800" height="600"></iframe>
+    <h3>Coming soon</h3>
+    <iframe id="gameFrame15" src="Updates under way..." width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame15')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Geometery Dash</h3>
-    <iframe id="gameFrame16" src="https://sites.google.com/view/theorangetree981626/geometry-dash" width="800" height="600"></iframe>
+    <h3>Coming soon</h3>
+    <iframe id="gameFrame16" src="Updates under way..." width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame16')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Roof top</h3>
-    <iframe id="gameFrame17" src="https://sites.google.com/view/theorangetree981626/rooftop-snipers" width="800" height="600"></iframe>
+    <h3>Coming soon</h3>
+    <iframe id="gameFrame17" src="Updates under way..." width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame17')">Go Full Screen</button>
 </div>
