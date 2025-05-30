@@ -72,43 +72,43 @@
 <!-- New game slots -->
 
 <div class="game-container">
-    <h3>Study</h3>
-    <iframe id="gameFrame12" src="https://geography-lessons.github.io/" width="800" height="600"></iframe>
+    <h3>Ducky</h3>
+    <iframe id="gameFrame12" src="https://ducky443747.github.io/home" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame12')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Arsenic</h3>
-    <iframe id="gameFrame13" src="https://arsenic-as.global.ssl.fastly.net/" width="800" height="600"></iframe>
+    <h3>Doge Unblocker</h3>
+    <iframe id="gameFrame13" src="https://omgea.rchamberlinwoodworking.com/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame13')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Monkey.gg</h3>
-    <iframe id="gameFrame14" src="https://kyleplayer.github.io/monkeygg2.github.io/" width="800" height="600"></iframe>
+    <h3>The-Pizza-Edition</h3>
+    <iframe id="gameFrame14" src="https://the-pizza-edition.bitbucket.io/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame14')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Pizza Edition</h3>
-    <iframe id="gameFrame15" src="https://jresearch.port0.org/" width="800" height="600"></iframe>
+    <h3>8-Ball-Pool</h3>
+    <iframe id="gameFrame15" src="https://8-ball-pool-online.github.io/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame15')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Pizza alt</h3>
-    <iframe id="gameFrame16" src="https://schoolpizzaparty.q-station.net/" width="800" height="600"></iframe>
+    <h3>Blake Playz</h3>
+    <iframe id="gameFrame16" src="https://blakeplayz19372x2.github.io/pages/games/catalog" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame16')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Gn Math</h3>
-    <iframe id="gameFrame17" src="https://gn-math.github.io/" width="800" height="600"></iframe>
+    <h3>Updates Underway ...</h3>
+    <iframe id="gameFrame17" src="nor" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame17')">Go Full Screen</button>
 </div>
