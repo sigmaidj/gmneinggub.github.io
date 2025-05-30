@@ -93,22 +93,22 @@
 </div>
 
 <div class="game-container">
-    <h3>Coming soon</h3>
-    <iframe id="gameFrame15" src="Updates under way..." width="800" height="600"></iframe>
+    <h3>Pizza Edition</h3>
+    <iframe id="gameFrame15" src="https://jresearch.port0.org/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame15')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Coming soon</h3>
-    <iframe id="gameFrame16" src="Updates under way..." width="800" height="600"></iframe>
+    <h3>Pizza alt</h3>
+    <iframe id="gameFrame16" src="https://schoolpizzaparty.q-station.net/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame16')">Go Full Screen</button>
 </div>
 
 <div class="game-container">
-    <h3>Coming soon</h3>
-    <iframe id="gameFrame17" src="Updates under way..." width="800" height="600"></iframe>
+    <h3>Gn Math</h3>
+    <iframe id="gameFrame17" src="https://gn-math.github.io/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame17')">Go Full Screen</button>
 </div>
