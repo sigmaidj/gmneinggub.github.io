@@ -73,8 +73,8 @@
     </div>
     
     <div class="game-container">
-        <h3>haleyschool</h3>
-        <iframe id="gameFrame8" src="https://haleyschool.github.io/index.html" width="800" height="600"></iframe>
+        <h3>Pizza-Edition alt</h3>
+        <iframe id="gameFrame8" src="https://schoolpizzaparty.q-station.net/" width="800" height="600"></iframe>
         <br>
         <button onclick="toggleFullScreen('gameFrame8')">Go Full Screen</button>
     </div>
