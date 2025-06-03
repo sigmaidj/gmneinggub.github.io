@@ -1,197 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Super Games 🎮</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      background: url('https://yourfantasybackground.com/mystic.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Cinzel', serif;
-      color: #fff;
-      margin: 0;
-      text-align: center;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Games Grid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://yourfantasybackground.com/mystic.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Cinzel', serif;
+            color: #fff;
+            text-align: center;
+        }
 
-    h1 {
-      font-size: 40px;
-      text-shadow: 0 0 15px #ffcc00;
-      font-family: 'Uncial Antiqua', cursive;
-      margin: 20px 0 10px;
-    }
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 0 15px #ffcc00;
+            font-family: 'Uncial Antiqua', cursive;
+            margin-bottom: 20px;
+        }
 
-    .navbar {
-      display: flex;
-      justify-content: center;
-      background: rgba(34, 0, 58, 0.8);
-      padding: 10px;
-      border-bottom: 3px solid #ffcc00;
-      box-shadow: 0 0 10px #ffcc00;
-    }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(34, 0, 58, 0.8);
+            padding: 10px;
+            border-bottom: 3px solid #ffcc00;
+            box-shadow: 0 0 10px #ffcc00;
+        }
 
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
 
-    .navbar a:hover {
-      background: #ffcc00;
-      color: black;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #ffcc00;
-    }
+        .navbar a:hover {
+            background: #ffcc00;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ffcc00;
+        }
 
-    .search-bar {
-      padding: 20px;
-    }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    .search-bar input {
-      width: 60%;
-      max-width: 500px;
-      padding: 12px 20px;
-      font-size: 18px;
-      border: 2px solid #ffcc00;
-      border-radius: 10px;
-      background-color: #222;
-      color: white;
-      box-shadow: 0 0 10px #ffcc00;
-    }
+        .game-tile {
+            background: rgba(34, 0, 58, 0.85);
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ffcc00;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
 
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
+        .game-tile:hover {
+            transform: scale(1.05);
+        }
 
-    .game-tile {
-      background: rgba(34, 0, 58, 0.9);
-      border-radius: 12px;
-      overflow: hidden;
-      cursor: pointer;
-      box-shadow: 0 0 10px #ffcc00;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+        .game-tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
 
-    .game-tile:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #ffcc00;
-    }
-
-    .game-tile img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-    }
-
-    .game-title {
-      padding: 10px;
-      font-size: 16px;
-      text-shadow: 0 0 8px #ffcc00;
-    }
-  </style>
+        .game-tile p {
+            margin: 0;
+            padding: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <div class="navbar">
+<div class="navbar">
     <a href="#">Home</a>
     <a href="#games">Games</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-  </div>
+</div>
 
-  <h1>Welcome to Super Gaming 🎮</h1>
-  <p>Play unblocked games for free!</p>
+<h1>Welcome to Super Gaming 🎮</h1>
+<p>Play unblocked games for free!</p>
 
-  <!-- Search -->
-  <div class="search-bar">
-    <input type="text" placeholder="🔍 Search for a game..." onkeyup="filterGames(this)">
-  </div>
-
-  <!-- Game Menu -->
-  <div class="game-grid" id="gameGrid">
-
-    <!-- Game tiles (repeat as needed) -->
-    <div class="game-tile" onclick="openGame('https://yurm.c.power-media.ro/games.html')">
-      <img src="https://via.placeholder.com/160x120?text=Compass" alt="Compass">
-      <div class="game-title">Compass</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://codex-gg.github.io/VIP/games/ragdollhit/index.html')">
-      <img src="https://via.placeholder.com/160x120?text=Ragdoll+Hit" alt="Ragdoll Hit">
-      <div class="game-title">Ragdoll Hit</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://ducky443747.github.io/home')">
-      <img src="https://via.placeholder.com/160x120?text=Ducky" alt="Ducky">
-      <div class="game-title">Ducky</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://omgea.rchamberlinwoodworking.com/')">
-      <img src="https://via.placeholder.com/160x120?text=Doge+Unblocker" alt="Doge Unblocker">
-      <div class="game-title">Doge Unblocker</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://the-pizza-edition.bitbucket.io/')">
-      <img src="https://via.placeholder.com/160x120?text=Pizza+Edition" alt="Pizza">
-      <div class="game-title">The Pizza Edition</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://8-ball-pool-online.github.io/')">
-      <img src="https://via.placeholder.com/160x120?text=8-Ball+Pool" alt="8-Ball Pool">
-      <div class="game-title">8-Ball Pool</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://blakeplayz19372x2.github.io/pages/games/catalog')">
-      <img src="https://via.placeholder.com/160x120?text=Blake+Playz" alt="Blake Playz">
-      <div class="game-title">Blake Playz</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://lunar-yprk.onrender.com/')">
-      <img src="https://via.placeholder.com/160x120?text=Lunar+Proxy" alt="Lunar Proxy">
-      <div class="game-title">Lunar Proxy</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://kyleplayer.github.io/monkeygg2.github.io/')">
-      <img src="https://via.placeholder.com/160x120?text=Monkey.gg" alt="Monkey.gg">
-      <div class="game-title">Monkey.gg</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://lunar-1-3rbl.onrender.com/')">
-      <img src="https://via.placeholder.com/160x120?text=Lunar+Alt+1" alt="Lunar Alt 1">
-      <div class="game-title">Lunar Alt 1</div>
-    </div>
-
-    <div class="game-tile" onclick="openGame('https://clasdb-7fya.onrender.com/')">
-      <img src="https://via.placeholder.com/160x120?text=Lunar+Alt+2" alt="Lunar Alt 2">
-      <div class="game-title">Lunar Alt 2</div>
-    </div>
-
-  </div>
-
-  <script>
-    function openGame(url) {
-      window.open(url, '_blank');
-    }
-
-    function filterGames(input) {
-      const filter = input.value.toLowerCase();
-      const tiles = document.querySelectorAll('.game-tile');
-      tiles.forEach(tile => {
-        const title = tile.querySelector('.game-title').innerText.toLowerCase();
-        tile.style.display = title.includes(filter) ? 'block' : 'none';
-      });
-    }
-  </script>
+<div class="grid-container">
+    <a href="https://yurm.c.power-media.ro/games.html" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Compass" alt="Compass">
+        <p>Compass</p>
+    </a>
+    <a href="https://codex-gg.github.io/VIP/games/ragdollhit/index.html" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Ragdoll+Hit" alt="Ragdoll Hit">
+        <p>Ragdoll Hit</p>
+    </a>
+    <a href="https://ducky443747.github.io/home" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Ducky" alt="Ducky">
+        <p>Ducky</p>
+    </a>
+    <a href="https://omgea.rchamberlinwoodworking.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Doge+Unblocker" alt="Doge Unblocker">
+        <p>Doge Unblocker</p>
+    </a>
+    <a href="https://the-pizza-edition.bitbucket.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Pizza+Edition" alt="Pizza Edition">
+        <p>The-Pizza-Edition</p>
+    </a>
+    <a href="https://8-ball-pool-online.github.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=8-Ball-Pool" alt="8-Ball Pool">
+        <p>8-Ball-Pool</p>
+    </a>
+    <a href="https://blakeplayz19372x2.github.io/pages/games/catalog" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Blake+Playz" alt="Blake Playz">
+        <p>Blake Playz</p>
+    </a>
+    <a href="https://lunar-yprk.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+Proxy" alt="Lunar Proxy">
+        <p>Lunar Proxy</p>
+    </a>
+    <a href="https://kyleplayer.github.io/monkeygg2.github.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Monkey.gg" alt="Monkey.gg">
+        <p>Monkey.gg</p>
+    </a>
+    <a href="https://lunar-1-3rbl.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+alt+1" alt="Lunar alt 1">
+        <p>Lunar alt 1</p>
+    </a>
+    <a href="https://clasdb-7fya.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+alt+2" alt="Lunar alt 2">
+        <p>Lunar alt 2</p>
+    </a>
+</div>
 
 </body>
 </html>
