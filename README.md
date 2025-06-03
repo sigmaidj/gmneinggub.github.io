@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Games 🎮</title>
+    <title>Super Games Grid</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <style>
         body {
@@ -21,33 +21,6 @@
             margin-bottom: 20px;
         }
 
-        .game-container {
-            background: rgba(34, 0, 58, 0.8);
-            border: 4px solid #ffcc00;
-            padding: 15px;
-            margin: 20px auto;
-            border-radius: 15px;
-            box-shadow: 0 0 20px #ffcc00;
-            width: 850px;
-        }
-
-        button {
-            background: linear-gradient(to right, #6a0dad, #ffcc00);
-            color: white;
-            font-size: 18px;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 8px;
-            text-shadow: 0 0 8px #ffcc00;
-        }
-
-        button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px #ffcc00;
-        }
-
-        /* Menu Bar Styles */
         .navbar {
             display: flex;
             justify-content: center;
@@ -72,11 +45,45 @@
             border-radius: 8px;
             box-shadow: 0 0 10px #ffcc00;
         }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .game-tile {
+            background: rgba(34, 0, 58, 0.85);
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ffcc00;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .game-tile:hover {
+            transform: scale(1.05);
+        }
+
+        .game-tile img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .game-tile p {
+            margin: 0;
+            padding: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <div class="navbar">
     <a href="#">Home</a>
     <a href="#games">Games</a>
@@ -87,100 +94,52 @@
 <h1>Welcome to Super Gaming 🎮</h1>
 <p>Play unblocked games for free!</p>
 
-<!-- Game Sections -->
-<div class="game-container">
-    <h3>Compass</h3>
-    <iframe id="gameFrame1" src="https://yurm.c.power-media.ro/games.html" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame1')">Go Full Screen</button>
+<div class="grid-container">
+    <a href="https://yurm.c.power-media.ro/games.html" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Compass" alt="Compass">
+        <p>Compass</p>
+    </a>
+    <a href="https://codex-gg.github.io/VIP/games/ragdollhit/index.html" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Ragdoll+Hit" alt="Ragdoll Hit">
+        <p>Ragdoll Hit</p>
+    </a>
+    <a href="https://ducky443747.github.io/home" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Ducky" alt="Ducky">
+        <p>Ducky</p>
+    </a>
+    <a href="https://omgea.rchamberlinwoodworking.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Doge+Unblocker" alt="Doge Unblocker">
+        <p>Doge Unblocker</p>
+    </a>
+    <a href="https://the-pizza-edition.bitbucket.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Pizza+Edition" alt="Pizza Edition">
+        <p>The-Pizza-Edition</p>
+    </a>
+    <a href="https://8-ball-pool-online.github.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=8-Ball-Pool" alt="8-Ball Pool">
+        <p>8-Ball-Pool</p>
+    </a>
+    <a href="https://blakeplayz19372x2.github.io/pages/games/catalog" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Blake+Playz" alt="Blake Playz">
+        <p>Blake Playz</p>
+    </a>
+    <a href="https://lunar-yprk.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+Proxy" alt="Lunar Proxy">
+        <p>Lunar Proxy</p>
+    </a>
+    <a href="https://kyleplayer.github.io/monkeygg2.github.io/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Monkey.gg" alt="Monkey.gg">
+        <p>Monkey.gg</p>
+    </a>
+    <a href="https://lunar-1-3rbl.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+alt+1" alt="Lunar alt 1">
+        <p>Lunar alt 1</p>
+    </a>
+    <a href="https://clasdb-7fya.onrender.com/" class="game-tile">
+        <img src="https://via.placeholder.com/150?text=Lunar+alt+2" alt="Lunar alt 2">
+        <p>Lunar alt 2</p>
+    </a>
 </div>
-
-<!-- All Games Included -->
-<div class="game-container">
-    <h3>Ragdoll Hit</h3>
-    <iframe id="gameFrame11" src="https://codex-gg.github.io/VIP/games/ragdollhit/index.html" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame11')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Ducky</h3>
-    <iframe id="gameFrame12" src="https://ducky443747.github.io/home" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame12')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Doge Unblocker</h3>
-    <iframe id="gameFrame13" src="https://omgea.rchamberlinwoodworking.com/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame13')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>The-Pizza-Edition</h3>
-    <iframe id="gameFrame14" src="https://the-pizza-edition.bitbucket.io/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame14')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>8-Ball-Pool</h3>
-    <iframe id="gameFrame15" src="https://8-ball-pool-online.github.io/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame15')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Blake Playz</h3>
-    <iframe id="gameFrame16" src="https://blakeplayz19372x2.github.io/pages/games/catalog" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame16')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Lunar Proxy</h3>
-    <iframe id="gameFrame17" src="https://lunar-yprk.onrender.com/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame17')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Monkey.gg</h3>
-    <iframe id="gameFrame19" src="https://kyleplayer.github.io/monkeygg2.github.io/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame19')">Go Full Screen</button>
-</div>
-
-<div class="game-container">
-    <h3>Lunar alt 1</h3>
-    <iframe id="gameFrame20" src="https://lunar-1-3rbl.onrender.com/" width="800" height="600"></iframe>
-    <br>
-    <button onclick="toggleFullScreen('gameFrame20')">Go Full Screen</button>
-</div>
-
-    
-    <div class="game-container">
-        <h3>Lunar alt 2</h3> <iframe id="gameFrame21" src="https://clasdb-7fya.onrender.com/" width="800" height="600"></iframe> 
-        <br>
-        <button onclick="toggleFullScreen('gameFrame21')">Go Full Screen</button>
-    </div>
-    
-
-<script>
-    function toggleFullScreen(frameId) {
-        let iframe = document.getElementById(frameId);
-        if (iframe.requestFullscreen) {
-            iframe.requestFullscreen();
-        } else if (iframe.mozRequestFullScreen) {
-            iframe.mozRequestFullScreen();
-        } else if (iframe.webkitRequestFullscreen) {
-            iframe.webkitRequestFullscreen();
-        } else if (iframe.msRequestFullscreen) {
-            iframe.msRequestFullscreen();
-        }
-    }
-</script>
 
 </body>
 </html>
