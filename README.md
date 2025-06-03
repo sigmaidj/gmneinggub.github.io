@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming Hub - Fantasy Edition 🎮✨</title>
+    <title>Super Games 🎮</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Uncial+Antiqua&display=swap" rel="stylesheet">
     <style>
         body {
@@ -46,13 +46,48 @@
             transform: scale(1.1);
             box-shadow: 0 0 20px #ffcc00;
         }
+
+        /* Menu Bar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: rgba(34, 0, 58, 0.8);
+            padding: 10px;
+            border-bottom: 3px solid #ffcc00;
+            box-shadow: 0 0 10px #ffcc00;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: #ffcc00;
+            color: black;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ffcc00;
+        }
     </style>
 </head>
 <body>
 
-<h1>Welcome to Gaming Hub 🎮✨</h1>
-<p>Play browser-based games directly here!</p>
+<!-- Navigation Bar -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
 
+<h1>Welcome to Super Gaming 🎮</h1>
+<p>Play unblocked games for free!</p>
+
+<!-- Game Sections -->
 <div class="game-container">
     <h3>Compass</h3>
     <iframe id="gameFrame1" src="https://yurm.c.power-media.ro/games.html" width="800" height="600"></iframe>
@@ -60,16 +95,13 @@
     <button onclick="toggleFullScreen('gameFrame1')">Go Full Screen</button>
 </div>
 
-<!-- Existing games... -->
-
+<!-- All Games Included -->
 <div class="game-container">
     <h3>Ragdoll Hit</h3>
     <iframe id="gameFrame11" src="https://codex-gg.github.io/VIP/games/ragdollhit/index.html" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame11')">Go Full Screen</button>
 </div>
-
-<!-- New game slots -->
 
 <div class="game-container">
     <h3>Ducky</h3>
@@ -107,11 +139,33 @@
 </div>
 
 <div class="game-container">
-    <h3>Updates Underway ...</h3>
-    <iframe id="gameFrame17" src="nor" width="800" height="600"></iframe>
+    <h3>Lunar Proxy</h3>
+    <iframe id="gameFrame17" src="https://lunar-yprk.onrender.com/" width="800" height="600"></iframe>
     <br>
     <button onclick="toggleFullScreen('gameFrame17')">Go Full Screen</button>
 </div>
+
+<div class="game-container">
+    <h3>Monkey.gg</h3>
+    <iframe id="gameFrame19" src="https://kyleplayer.github.io/monkeygg2.github.io/" width="800" height="600"></iframe>
+    <br>
+    <button onclick="toggleFullScreen('gameFrame19')">Go Full Screen</button>
+</div>
+
+<div class="game-container">
+    <h3>Lunar alt 1</h3>
+    <iframe id="gameFrame20" src="https://lunar-1-3rbl.onrender.com/" width="800" height="600"></iframe>
+    <br>
+    <button onclick="toggleFullScreen('gameFrame20')">Go Full Screen</button>
+</div>
+
+    
+    <div class="game-container">
+        <h3>Lunar alt 2</h3> <iframe id="gameFrame21" src="https://clasdb-7fya.onrender.com/" width="800" height="600"></iframe> 
+        <br>
+        <button onclick="toggleFullScreen('gameFrame21')">Go Full Screen</button>
+    </div>
+    
 
 <script>
     function toggleFullScreen(frameId) {
